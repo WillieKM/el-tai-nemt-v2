@@ -10,7 +10,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, fontFamily: "sans-serif" }}>
+      <body style={{ margin: 0, fontFamily: "Segoe UI, Arial, sans-serif" }}>
         {children}
       </body>
     </html>

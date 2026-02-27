@@ -49,7 +49,8 @@ export default function Home() {
         padding: "140px 20px"
       }}>
         <h1 style={{
-          fontSize: "56px",
+          fontFamily: "Playfair Display, serif",
+          fontSize: "60px",
           fontWeight: 700,
           marginBottom: "30px"
         }}>
@@ -88,12 +89,20 @@ export default function Home() {
         textAlign: "center"
       }}>
         <h2 style={{
+          fontFamily: "Playfair Display, serif",
           fontSize: "40px",
           color: "#0F2A43",
-          marginBottom: "30px"
+          marginBottom: "20px"
         }}>
           About El-Tai Transportation
         </h2>
+
+        <div style={{
+          width: "60px",
+          height: "3px",
+          background: "#C8A95A",
+          margin: "20px auto 40px auto"
+        }} />
 
         <p style={{
           maxWidth: "800px",
@@ -117,12 +126,20 @@ export default function Home() {
         textAlign: "center"
       }}>
         <h2 style={{
+          fontFamily: "Playfair Display, serif",
           fontSize: "40px",
           color: "#0F2A43",
-          marginBottom: "60px"
+          marginBottom: "20px"
         }}>
           Our Services
         </h2>
+
+        <div style={{
+          width: "60px",
+          height: "3px",
+          background: "#C8A95A",
+          margin: "20px auto 60px auto"
+        }} />
 
         <div style={{
           display: "grid",
@@ -139,12 +156,22 @@ export default function Home() {
             "Wheelchair Transportation",
             "Private Medical Transport"
           ].map((service) => (
-            <div key={service} style={{
-              background: "white",
-              padding: "40px",
-              borderRadius: "10px",
-              boxShadow: "0 5px 20px rgba(0,0,0,0.05)"
-            }}>
+            <div
+              key={service}
+              style={{
+                background: "white",
+                padding: "40px",
+                borderRadius: "10px",
+                boxShadow: "0 15px 40px rgba(15,42,67,0.08)",
+                transition: "all 0.3s ease"
+              }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.transform = "translateY(-8px)")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.transform = "translateY(0px)")
+              }
+            >
               <h3 style={{
                 color: "#0F2A43",
                 fontSize: "18px"
@@ -156,18 +183,73 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SERVICE AREAS */}
-      <section id="areas" style={{
+      {/* TRUST SECTION */}
+      <section style={{
         padding: "120px 20px",
         textAlign: "center"
       }}>
         <h2 style={{
+          fontFamily: "Playfair Display, serif",
           fontSize: "40px",
           color: "#0F2A43",
-          marginBottom: "30px"
+          marginBottom: "20px"
+        }}>
+          Why Families Trust Us
+        </h2>
+
+        <div style={{
+          width: "60px",
+          height: "3px",
+          background: "#C8A95A",
+          margin: "20px auto 50px auto"
+        }} />
+
+        <div style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+          gap: "40px",
+          maxWidth: "1000px",
+          margin: "0 auto"
+        }}>
+          {[
+            "Licensed & Insured",
+            "Professional Drivers",
+            "Wheelchair Accessible Vehicles",
+            "On-Time Guarantee"
+          ].map((item) => (
+            <div key={item} style={{
+              background: "white",
+              padding: "40px",
+              borderRadius: "10px",
+              boxShadow: "0 10px 30px rgba(0,0,0,0.05)"
+            }}>
+              <h3 style={{ color: "#0F2A43" }}>{item}</h3>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* SERVICE AREAS */}
+      <section id="areas" style={{
+        padding: "120px 20px",
+        textAlign: "center",
+        background: "#F7F9FC"
+      }}>
+        <h2 style={{
+          fontFamily: "Playfair Display, serif",
+          fontSize: "40px",
+          color: "#0F2A43",
+          marginBottom: "20px"
         }}>
           Service Areas
         </h2>
+
+        <div style={{
+          width: "60px",
+          height: "3px",
+          background: "#C8A95A",
+          margin: "20px auto 40px auto"
+        }} />
 
         <p style={{
           fontSize: "18px",
@@ -178,27 +260,43 @@ export default function Home() {
         </p>
       </section>
 
-      {/* CONTACT */}
+      {/* CONTACT CTA */}
       <section id="contact" style={{
         background: "#0F2A43",
         color: "white",
-        padding: "100px 20px",
+        padding: "120px 20px",
         textAlign: "center"
       }}>
         <h2 style={{
-          fontSize: "36px",
+          fontFamily: "Playfair Display, serif",
+          fontSize: "40px",
           marginBottom: "20px"
         }}>
-          Contact Us
+          Request Transportation Today
         </h2>
 
-        <p style={{ marginBottom: "10px" }}>
-          Email: info@yourdomain.com
+        <div style={{
+          width: "60px",
+          height: "3px",
+          background: "#C8A95A",
+          margin: "20px auto 40px auto"
+        }} />
+
+        <p style={{ marginBottom: "30px", opacity: 0.9 }}>
+          Contact us to schedule safe and reliable medical transportation.
         </p>
 
-        <p>
-          Phone: (XXX) XXX-XXXX
-        </p>
+        <a href="mailto:info@yourdomain.com" style={{
+          background: "#C8A95A",
+          color: "#0F2A43",
+          padding: "18px 40px",
+          borderRadius: "8px",
+          fontWeight: 600,
+          fontSize: "18px",
+          textDecoration: "none"
+        }}>
+          Email Us Now
+        </a>
       </section>
 
       {/* FOOTER */}

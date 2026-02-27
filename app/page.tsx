@@ -1,5 +1,9 @@
 export default function Home() {
   return (
+   <h1 className="text-5xl font-bold">
+  UPDATE CONFIRMED 2025
+</h1>
+    
     <main>
 
       {/* NAVBAR */}

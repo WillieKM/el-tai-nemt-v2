@@ -82,38 +82,148 @@ export default function Home() {
           Schedule Transportation
         </a>
       </section>
+{/* ABOUT */}
+<section id="about" style={{
+  padding: "120px 20px",
+  textAlign: "center",
+  background: "white"
+}}>
+  <h2 style={{
+    fontFamily: "Playfair Display, serif",
+    fontSize: "42px",
+    color: "#0F2A43"
+  }}>
+    About El-Tai Transportation
+  </h2>
 
-      {/* ABOUT */}
-      <section id="about" style={{ padding: "120px 20px", textAlign: "center" }}>
-        <h2 style={{
-          fontFamily: "Playfair Display, serif",
-          fontSize: "40px",
-          color: "#0F2A43"
+  <div style={{
+    width: "70px",
+    height: "3px",
+    background: "#C8A95A",
+    margin: "20px auto 50px auto"
+  }} />
+
+  <div style={{
+    maxWidth: "900px",
+    margin: "0 auto",
+    fontSize: "18px",
+    color: "#555",
+    lineHeight: 1.8
+  }}>
+
+    <p style={{ marginBottom: "30px" }}>
+      El-Tai Transportation is a professional Non-Emergency Medical
+      Transportation (NEMT) provider dedicated to delivering safe,
+      reliable, and compassionate transportation services throughout
+      King County, Snohomish County, and Pierce County.
+    </p>
+
+    <p style={{ marginBottom: "40px" }}>
+      We understand that medical transportation is more than just a ride —
+      it is a critical part of maintaining health, independence, and dignity.
+      Our team is committed to providing punctual, respectful, and
+      comfortable transportation for every passenger we serve.
+    </p>
+
+    <h3 style={{
+      fontFamily: "Playfair Display, serif",
+      color: "#0F2A43",
+      marginTop: "60px",
+      marginBottom: "20px"
+    }}>
+      Our Mission
+    </h3>
+
+    <p style={{ marginBottom: "30px" }}>
+      To provide dependable and dignified medical transportation that
+      supports the well-being and independence of our community.
+    </p>
+
+    <h3 style={{
+      fontFamily: "Playfair Display, serif",
+      color: "#0F2A43",
+      marginTop: "40px",
+      marginBottom: "20px"
+    }}>
+      Who We Serve
+    </h3>
+
+    <p style={{ marginBottom: "40px" }}>
+      We serve seniors, individuals with disabilities, patients requiring
+      recurring dialysis treatments, post-hospital discharge clients,
+      and anyone needing safe, non-emergency medical transportation.
+    </p>
+
+    <h3 style={{
+      fontFamily: "Playfair Display, serif",
+      color: "#0F2A43",
+      marginBottom: "20px"
+    }}>
+      Our Core Values
+    </h3>
+
+    <div style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+      gap: "30px",
+      marginTop: "30px"
+    }}>
+      {[
+        {
+          title: "Safety First",
+          desc: "Every vehicle is maintained and every ride is conducted with strict safety standards."
+        },
+        {
+          title: "Punctuality",
+          desc: "We respect your time and ensure timely pickups and arrivals."
+        },
+        {
+          title: "Compassion",
+          desc: "We treat every passenger with dignity, care, and professionalism."
+        },
+        {
+          title: "Reliability",
+          desc: "Consistent and dependable service you can trust."
+        }
+      ].map((value) => (
+        <div key={value.title} style={{
+          background: "#F7F9FC",
+          padding: "30px",
+          borderRadius: "10px",
+          textAlign: "left"
         }}>
-          About El-Tai Transportation
-        </h2>
+          <h4 style={{
+            color: "#0F2A43",
+            marginBottom: "10px"
+          }}>
+            {value.title}
+          </h4>
 
-        <div style={{
-          width: "60px",
-          height: "3px",
-          background: "#C8A95A",
-          margin: "20px auto 40px auto"
-        }} />
+          <p style={{ fontSize: "15px" }}>
+            {value.desc}
+          </p>
+        </div>
+      ))}
+    </div>
 
-        <p style={{
-          maxWidth: "800px",
-          margin: "0 auto",
-          fontSize: "18px",
-          color: "#555",
-          lineHeight: 1.7
-        }}>
-          El-Tai Transportation is a trusted Non-Emergency Medical
-          Transportation (NEMT) provider serving King County,
-          Snohomish County, and Pierce County. Our mission is to
-          deliver reliable and dignified transportation services
-          that support the health and independence of our clients.
-        </p>
-      </section>
+    <h3 style={{
+      fontFamily: "Playfair Display, serif",
+      color: "#0F2A43",
+      marginTop: "60px",
+      marginBottom: "20px"
+    }}>
+      Commitment to Excellence
+    </h3>
+
+    <p>
+      From the moment a ride is scheduled to the final destination,
+      our focus is on professionalism, comfort, and clear communication.
+      We aim to build long-term relationships with families, care facilities,
+      and healthcare providers by delivering consistent, high-quality service.
+    </p>
+
+  </div>
+</section>
 
       {/* SERVICES */}
       <section id="services" style={{

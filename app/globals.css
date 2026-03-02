@@ -61,5 +61,11 @@ body {
   .cta {
     width: 100%;
     text-align: center;
-  }
+  }.footer {
+  background: #0F2A43;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 80px;
+}
 }

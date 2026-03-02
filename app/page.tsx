@@ -50,9 +50,9 @@ export default function Home() {
             alignItems: "center"
           }}
         >
-          <a href="#about" style={{ textDecoration: "none", color: "#0F2A43" }}>About</a>
-          <a href="#services" style={{ textDecoration: "none", color: "#0F2A43" }}>Services</a>
-          <a href="#areas" style={{ textDecoration: "none", color: "#0F2A43" }}>Service Areas</a>
+          <a href="/about" style={{ textDecoration: "none", color: "#0F2A43" }}>About</a>
+          <a href="/services" style={{ textDecoration: "none", color: "#0F2A43" }}>Services</a>
+          <a href="/areas" style={{ textDecoration: "none", color: "#0F2A43" }}>Service Areas</a>
           <a
             href="#contact"
             style={{

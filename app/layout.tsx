@@ -2,9 +2,9 @@ import "./globals.css";
 import Link from "next/link";
 
 export const metadata = {
-  title: "El-Tai Transportation | Non-Emergency Medical Transportation North of Seattle",
+  title: "El-Tai Transportation | Medical Transportation in Everett, Marysville & Snohomish",
   description:
-    "Safe, punctual, and compassionate Non-Emergency Medical Transportation services north of Seattle.",
+    "Safe and reliable Non-Emergency Medical Transportation in Everett, Marysville, Snohomish, and surrounding areas. Dialysis, hospital discharge, and doctor appointments."
 };
 
 export default function RootLayout({

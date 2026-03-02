@@ -17,20 +17,20 @@ export default function HomePage() {
     padding: "160px 20px"
   }}
 >
-  <h1 style={{ fontSize: "48px", marginBottom: "25px" }}>
-    Safe & Reliable Medical Transportation North of Seattle
-  </h1>
+ <h1 style={{ fontSize: "48px", marginBottom: "25px" }}>
+  Reliable Non-Emergency Medical Transportation in Everett, Marysville & Snohomish
+</h1>
 
-  <p style={{
-    maxWidth: "720px",
-    margin: "0 auto 35px auto",
-    fontSize: "18px",
-    opacity: 0.95
-  }}>
-    El-Tai Transportation provides dependable Non-Emergency Medical Transportation
-    for dialysis treatments, hospital discharge, rehabilitation visits,
-    and doctor appointments — with punctual service and compassionate care.
-  </p>
+ <p style={{
+  maxWidth: "720px",
+  margin: "0 auto 35px auto",
+  fontSize: "18px",
+  opacity: 0.95
+}}>
+  El-Tai Transportation provides safe, punctual, and compassionate
+  medical transportation services throughout Everett, Marysville,
+  Snohomish, and surrounding communities.
+</p>
 
   <div style={{ marginBottom: "25px" }}>
     <a
@@ -69,47 +69,16 @@ export default function HomePage() {
 </section>
 
       {/* SERVICES PREVIEW */}
-      <section style={{ padding: "100px 20px", textAlign: "center" }}>
-        <h2 style={{ fontSize: "36px", marginBottom: "50px", color: "#0F2A43" }}>
-          Our Services
-        </h2>
-
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-          gap: "30px",
-          maxWidth: "900px",
-          margin: "0 auto 50px auto"
-        }}>
-          <div>
-            <h4>Dialysis Transportation</h4>
-            <p>Reliable recurring rides for dialysis patients.</p>
-          </div>
-
-          <div>
-            <h4>Hospital Discharge</h4>
-            <p>Safe transport home after hospital stays.</p>
-          </div>
-
-          <div>
-            <h4>Wheelchair Accessible</h4>
-            <p>ADA-compliant vehicles with secure assistance.</p>
-          </div>
-        </div>
-
-        <a
-          href="/services"
-          style={{
-            background: "#C8A95A",
-            padding: "14px 28px",
-            borderRadius: "8px",
-            textDecoration: "none",
-            color: "#0F2A43",
-            fontWeight: 600
-          }}
-        >
-          View All Services
-        </a>
+     <p style={{
+  maxWidth: "720px",
+  margin: "0 auto 35px auto",
+  fontSize: "18px",
+  opacity: 0.95
+}}>
+  El-Tai Transportation provides safe, punctual, and compassionate
+  medical transportation services throughout Everett, Marysville,
+  Snohomish, and surrounding communities.
+</p>
       </section>
 {/* WHY CHOOSE US */}
 <section style={{

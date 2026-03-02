@@ -10,7 +10,7 @@ export default function About() {
         El-Tai Transportation is a trusted Non-Emergency Medical Transportation (NEMT)
         provider serving communities north of Seattle. We specialize in reliable,
         compassionate, and punctual transportation for individuals who require safe
-        travel to medical appointments.
+        travel to medical appointments. 
       </p>
 
       <h2 style={{ fontSize: "28px", color: "#0F2A43", marginTop: "50px" }}>

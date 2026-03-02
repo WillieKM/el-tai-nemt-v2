@@ -34,7 +34,12 @@ export default function RootLayout({
         </nav>
 
         {children}
-
+<footer className="footer">
+  <p>El-Tai Transportation</p>
+  <p>469-407-5588</p>
+  <p>info@el-taitransportation.com</p>
+  <p>Serving Everett, Marysville & Snohomish</p>
+</footer>
       </body>
     </html>
   );

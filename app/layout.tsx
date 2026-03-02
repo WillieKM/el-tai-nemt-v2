@@ -40,6 +40,9 @@ export default function RootLayout({
   <p>info@el-taitransportation.com</p>
   <p>Serving Everett, Marysville & Snohomish</p>
 </footer>
+        <a href="tel:4694075588" className="floating-call">
+  Call Now
+</a>
       </body>
     </html>
   );

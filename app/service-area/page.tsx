@@ -23,5 +23,5 @@ export default function ServiceArea() {
       <p>Email: info@el-taitransportaion.com</p>
 
     </main>
-  );
+  ); 
 }

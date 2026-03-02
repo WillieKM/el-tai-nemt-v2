@@ -15,16 +15,24 @@ export default function ContactPage() {
           in Everett, Marysville, and Snohomish.
         </p>
       </section>
+<section className="contact-form-section">
+  <h2>Request Transportation</h2>
 
-      <section className="contact-info">
-        <h2>Call Us</h2>
-        <p>
-          <a href="tel:4694075588">469-407-5588</a>
-        </p>
+  <form className="contact-form">
+    <input type="text" placeholder="Full Name" required />
+    <input type="tel" placeholder="Phone Number" required />
+    <input type="text" placeholder="Pickup Location" required />
+    <input type="text" placeholder="Destination" required />
+    <textarea placeholder="Appointment Date & Time"></textarea>
 
-        <h2>Email</h2>
-        <p>info@el-taitransportation.com</p>
-      </section>
+    <button type="submit">Submit Request</button>
+  </form>
+
+  <div className="contact-direct">
+    <p>Or call us directly:</p>
+    <a href="tel:4694075588">469-407-5588</a>
+  </div>
+</section>
 
     </main>
   );

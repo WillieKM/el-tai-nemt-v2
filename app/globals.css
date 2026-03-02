@@ -116,4 +116,34 @@ body {
   font-weight: 700;
   text-decoration: none;
 }
-  
+  .footer {
+  background: #0F2A43;
+  color: white;
+  padding: 60px 20px;
+  margin-top: 80px;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #C8A95A;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+

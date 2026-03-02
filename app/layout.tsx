@@ -1,8 +1,6 @@
-import "./globals.css";
-
 export const metadata = {
   title: "El-Tai Transportation",
-  description: "Non-Emergency Medical Transportation Services",
+  description: "Reliable Non-Emergency Medical Transportation",
 };
 
 export default function RootLayout({
@@ -12,7 +10,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body style={{ margin: 0, fontFamily: "Arial, sans-serif" }}>
+        {children}
+      </body>
     </html>
   );
 }

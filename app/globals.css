@@ -147,3 +147,47 @@ body {
     text-align: center;
   }
 
+.contact-form-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+}
+
+.contact-form button {
+  background: #C8A95A;
+  color: #0F2A43;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-direct {
+  margin-top: 40px;
+}
+
+.contact-direct a {
+  font-weight: 700;
+  color: #0F2A43;
+  text-decoration: none;
+}

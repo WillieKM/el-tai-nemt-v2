@@ -17,51 +17,69 @@ export default function RootLayout({
       <body style={{ margin: 0, fontFamily: "Arial, sans-serif" }}>
 
         {/* NAVBAR */}
-        <nav
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            padding: "20px 60px",
-            borderBottom: "1px solid #eee",
-            background: "white",
-            position: "sticky",
-            top: 0,
-            zIndex: 1000
-          }}
-        >
-          <div style={{ fontSize: "22px", fontWeight: 700, color: "#0F2A43" }}>
-            El-Tai Transportation
-          </div>
+   <nav
+  style={{
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "20px 60px",
+    borderBottom: "1px solid #eee",
+    background: "white",
+    position: "sticky",
+    top: 0,
+    zIndex: 1000
+  }}
+>
+  {/* LOGO → Click goes home */}
+  <Link
+    href="/"
+    style={{
+      fontSize: "22px",
+      fontWeight: 700,
+      color: "#0F2A43",
+      textDecoration: "none"
+    }}
+  >
+    El-Tai Transportation
+  </Link>
 
-          <div style={{ display: "flex", gap: "30px", alignItems: "center" }}>
-            <Link href="/about" style={{ textDecoration: "none", color: "#0F2A43" }}>
-              About
-            </Link>
+  <div style={{ display: "flex", gap: "30px", alignItems: "center" }}>
+    
+    <Link href="/" style={{ textDecoration: "none", color: "#0F2A43" }}>
+      Home
+    </Link>
 
-            <Link href="/services" style={{ textDecoration: "none", color: "#0F2A43" }}>
-              Services
-            </Link>
+    <Link href="/about" style={{ textDecoration: "none", color: "#0F2A43" }}>
+      About
+    </Link>
 
-            <Link href="/service-area" style={{ textDecoration: "none", color: "#0F2A43" }}>
-              Service Area
-            </Link>
+    <Link href="/services" style={{ textDecoration: "none", color: "#0F2A43" }}>
+      Services
+    </Link>
 
-            <Link
-              href="/contact"
-              style={{
-                background: "#C8A95A",
-                padding: "10px 20px",
-                borderRadius: "8px",
-                textDecoration: "none",
-                color: "#0F2A43",
-                fontWeight: 600
-              }}
-            >
-              Book Ride
-            </Link>
-          </div>
-        </nav>
+    <Link href="/service-area" style={{ textDecoration: "none", color: "#0F2A43" }}>
+      Service Area
+    </Link>
+
+    <Link href="/contact" style={{ textDecoration: "none", color: "#0F2A43" }}>
+      Contact
+    </Link>
+
+    <Link
+      href="/contact"
+      style={{
+        background: "#C8A95A",
+        padding: "10px 20px",
+        borderRadius: "8px",
+        textDecoration: "none",
+        color: "#0F2A43",
+        fontWeight: 600
+      }}
+    >
+      Book Ride
+    </Link>
+  </div>
+</nav>>
 
         {children}
 

@@ -2,9 +2,9 @@ import "./globals.css";
 import Link from "next/link";
 
 export const metadata = {
-  title: "El-Tai Transportation | Medical Transportation in Everett, Marysville & Snohomish",
+  title: "El-Tai Transportation",
   description:
-    "Safe and reliable Non-Emergency Medical Transportation in Everett, Marysville, Snohomish, and surrounding areas. Dialysis, hospital discharge, and doctor appointments."
+    "Reliable Non-Emergency Medical Transportation in Everett, Marysville, and Snohomish.",
 };
 
 export default function RootLayout({
@@ -14,72 +14,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, fontFamily: "Arial, sans-serif" }}>
+      <body>
 
-        {/* NAVBAR */}
-   <nav
-  style={{
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "20px 60px",
-    borderBottom: "1px solid #eee",
-    background: "white",
-    position: "sticky",
-    top: 0,
-    zIndex: 1000
-  }}
->
-  {/* LOGO → Click goes home */}
-  <Link
-    href="/"
-    style={{
-      fontSize: "22px",
-      fontWeight: 700,
-      color: "#0F2A43",
-      textDecoration: "none"
-    }}
-  >
-    El-Tai Transportation
-  </Link>
+        <nav className="navbar">
+          <Link href="/" className="logo">
+            El-Tai Transportation
+          </Link>
 
-  <div style={{ display: "flex", gap: "30px", alignItems: "center" }}>
-    
-    <Link href="/" style={{ textDecoration: "none", color: "#0F2A43" }}>
-      Home
-    </Link>
-
-    <Link href="/about" style={{ textDecoration: "none", color: "#0F2A43" }}>
-      About
-    </Link>
-
-    <Link href="/services" style={{ textDecoration: "none", color: "#0F2A43" }}>
-      Services
-    </Link>
-
-    <Link href="/service-area" style={{ textDecoration: "none", color: "#0F2A43" }}>
-      Service Area
-    </Link>
-
-    <Link href="/contact" style={{ textDecoration: "none", color: "#0F2A43" }}>
-      Contact
-    </Link>
-
-    <Link
-      href="/contact"
-      style={{
-        background: "#C8A95A",
-        padding: "10px 20px",
-        borderRadius: "8px",
-        textDecoration: "none",
-        color: "#0F2A43",
-        fontWeight: 600
-      }}
-    >
-      Book Ride
-    </Link>
-  </div>
-</nav>
+          <div className="nav-links">
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/services">Services</Link>
+            <Link href="/service-area">Service Area</Link>
+            <Link href="/contact">Contact</Link>
+            <Link href="/contact" className="cta">
+              Book Ride
+            </Link>
+          </div>
+        </nav>
 
         {children}
 

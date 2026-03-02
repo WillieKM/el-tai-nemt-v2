@@ -161,74 +161,72 @@ export default function HomePage() {
   </div>
 </section>
 
-      {/* TESTIMONIALS PREVIEW */}
-      <section style={{
-        padding: "100px 20px",
-        textAlign: "center"
-      }}>
-        <h2 style={{ fontSize: "36px", marginBottom: "40px", color: "#0F2A43" }}>
-          What Our Clients Say
-        </h2>
+     {/* TESTIMONIALS */}
+<section style={{
+  padding: "100px 20px",
+  textAlign: "center"
+}}>
+  <h2 style={{ fontSize: "36px", marginBottom: "50px", color: "#0F2A43" }}>
+    Trusted by Patients & Families
+  </h2>
 
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-          gap: "30px",
-          maxWidth: "900px",
-          margin: "0 auto"
-        }}>
-          <div>
-            ⭐⭐⭐⭐⭐
-            <p>"Always on time and extremely professional."</p>
-          </div>
+  <div style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+    gap: "30px",
+    maxWidth: "900px",
+    margin: "0 auto"
+  }}>
+    <div style={{ background: "white", padding: "30px", borderRadius: "10px", boxShadow: "0 10px 25px rgba(0,0,0,0.05)" }}>
+      ⭐⭐⭐⭐⭐
+      <p>"Professional, reliable, and always on time for dialysis."</p>
+    </div>
 
-          <div>
-            ⭐⭐⭐⭐⭐
-            <p>"Reliable service for my dialysis appointments."</p>
-          </div>
+    <div style={{ background: "white", padding: "30px", borderRadius: "10px", boxShadow: "0 10px 25px rgba(0,0,0,0.05)" }}>
+      ⭐⭐⭐⭐⭐
+      <p>"They made hospital discharge smooth and stress-free."</p>
+    </div>
 
-          <div>
-            ⭐⭐⭐⭐⭐
-            <p>"Compassionate drivers who truly care."</p>
-          </div>
-        </div>
-      </section>
+    <div style={{ background: "white", padding: "30px", borderRadius: "10px", boxShadow: "0 10px 25px rgba(0,0,0,0.05)" }}>
+      ⭐⭐⭐⭐⭐
+      <p>"Compassionate drivers who truly care about their passengers."</p>
+    </div>
+  </div>
+</section>
+     {/* SERVICE AREA */}
+<section style={{
+  background: "#F7F9FC",
+  padding: "100px 20px",
+  textAlign: "center"
+}}>
+  <h2 style={{ fontSize: "36px", marginBottom: "30px", color: "#0F2A43" }}>
+    Proudly Serving North of Seattle
+  </h2>
 
-      {/* SERVICE AREA PREVIEW */}
-      <section style={{
-        background: "#F7F9FC",
-        padding: "100px 20px",
-        textAlign: "center"
-      }}>
-        <h2 style={{ fontSize: "36px", marginBottom: "30px", color: "#0F2A43" }}>
-          Service Area
-        </h2>
+  <p style={{
+    maxWidth: "750px",
+    margin: "0 auto 40px auto",
+    fontSize: "18px",
+    color: "#555"
+  }}>
+    We provide Non-Emergency Medical Transportation services throughout
+    communities north of Seattle. Contact us to confirm availability in your area.
+  </p>
 
-        <p style={{
-          maxWidth: "700px",
-          margin: "0 auto 30px auto",
-          fontSize: "18px",
-          color: "#555"
-        }}>
-          Proudly serving communities north of Seattle with reliable
-          Non-Emergency Medical Transportation services.
-        </p>
-
-        <a
-          href="/service-area"
-          style={{
-            background: "#0F2A43",
-            padding: "14px 28px",
-            borderRadius: "8px",
-            textDecoration: "none",
-            color: "white",
-            fontWeight: 600
-          }}
-        >
-          View Service Areas
-        </a>
-      </section>
-
+  <a
+    href="/service-area"
+    style={{
+      background: "#0F2A43",
+      padding: "14px 28px",
+      borderRadius: "8px",
+      textDecoration: "none",
+      color: "white",
+      fontWeight: 600
+    }}
+  >
+    View Service Areas
+  </a>
+</section>
       {/* FINAL CTA */}
       <section style={{
         padding: "100px 20px",

@@ -8,44 +8,65 @@ export default function HomePage() {
   return (
     <main style={{ fontFamily: "Arial, sans-serif" }}>
 
-      {/* HERO SECTION */}
-      <section
-        style={{
-          background: "#0F2A43",
-          color: "white",
-          textAlign: "center",
-          padding: "140px 20px"
-        }}
-      >
-        <h1 style={{ fontSize: "48px", marginBottom: "25px" }}>
-          Reliable Non-Emergency Medical Transportation
-        </h1>
+    {/* HERO SECTION */}
+<section
+  style={{
+    background: "#0F2A43",
+    color: "white",
+    textAlign: "center",
+    padding: "160px 20px"
+  }}
+>
+  <h1 style={{ fontSize: "48px", marginBottom: "25px" }}>
+    Safe & Reliable Medical Transportation North of Seattle
+  </h1>
 
-        <p style={{
-          maxWidth: "700px",
-          margin: "0 auto 40px auto",
-          fontSize: "18px",
-          opacity: 0.9
-        }}>
-          Safe, punctual, and compassionate transportation for medical
-          appointments, dialysis, hospital discharge, and rehabilitation visits
-          north of Seattle.
-        </p>
+  <p style={{
+    maxWidth: "720px",
+    margin: "0 auto 35px auto",
+    fontSize: "18px",
+    opacity: 0.95
+  }}>
+    El-Tai Transportation provides dependable Non-Emergency Medical Transportation
+    for dialysis treatments, hospital discharge, rehabilitation visits,
+    and doctor appointments — with punctual service and compassionate care.
+  </p>
 
-        <a
-          href="/contact"
-          style={{
-            background: "#C8A95A",
-            padding: "16px 32px",
-            borderRadius: "8px",
-            textDecoration: "none",
-            color: "#0F2A43",
-            fontWeight: 600
-          }}
-        >
-          Schedule Transportation
-        </a>
-      </section>
+  <div style={{ marginBottom: "25px" }}>
+    <a
+      href="/contact"
+      style={{
+        background: "#C8A95A",
+        padding: "16px 32px",
+        borderRadius: "8px",
+        textDecoration: "none",
+        color: "#0F2A43",
+        fontWeight: 600,
+        marginRight: "15px"
+      }}
+    >
+      Request Transportation
+    </a>
+
+    <a
+      href="tel:4694075588"
+      style={{
+        border: "2px solid #C8A95A",
+        padding: "14px 28px",
+        borderRadius: "8px",
+        textDecoration: "none",
+        color: "white",
+        fontWeight: 600
+      }}
+    >
+      Call 469-407-5588
+    </a>
+  </div>
+
+  <p style={{ fontSize: "14px", opacity: 0.8 }}>
+    Licensed • Insured • Medicaid Coordination Available
+  </p>
+</section>
 
       {/* SERVICES PREVIEW */}
       <section style={{ padding: "100px 20px", textAlign: "center" }}>

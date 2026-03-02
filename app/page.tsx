@@ -69,7 +69,16 @@ export default function HomePage() {
           Licensed • Insured • Medicaid Coordination Available
         </p>
       </section>
-
+{/* TRUST BAR */}
+<section
+  style={{
+    background: "#F7F9FC",
+    padding: "30px 20px",
+    textAlign: "center",
+    borderBottom: "1px solid #eee"
+  }}
+>
+  <p style={{ margin: 0, fontWeight:
       {/* WHY CHOOSE US */}
       <section
         style={{

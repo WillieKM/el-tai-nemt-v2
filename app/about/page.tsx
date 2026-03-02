@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "About El-Tai Transportation | NEMT North Seattle",
+  description:
+    "Learn about El-Tai Transportation, a trusted Non-Emergency Medical Transportation provider serving communities north of Seattle with safe, punctual, and compassionate service.",
+};
+
 export default function About() {
   return (
     <main style={{ fontFamily: "Arial, sans-serif", padding: "100px 20px", maxWidth: "1000px", margin: "0 auto" }}>

@@ -111,45 +111,55 @@ export default function HomePage() {
           View All Services
         </a>
       </section>
+{/* WHY CHOOSE US */}
+<section style={{
+  background: "#F7F9FC",
+  padding: "100px 20px",
+  textAlign: "center"
+}}>
+  <h2 style={{ fontSize: "36px", marginBottom: "30px", color: "#0F2A43" }}>
+    Why Families Trust El-Tai Transportation
+  </h2>
 
-      {/* WHY CHOOSE US SUMMARY */}
-      <section style={{
-        background: "#F7F9FC",
-        padding: "100px 20px",
-        textAlign: "center"
-      }}>
-        <h2 style={{ fontSize: "36px", marginBottom: "40px", color: "#0F2A43" }}>
-          Why Choose El-Tai Transportation?
-        </h2>
+  <p style={{
+    maxWidth: "750px",
+    margin: "0 auto 60px auto",
+    color: "#555",
+    fontSize: "18px"
+  }}>
+    We understand that medical transportation is more than just a ride —
+    it’s about safety, dignity, and reliability. Our commitment is to
+    provide professional service that patients and families can depend on.
+  </p>
 
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-          gap: "30px",
-          maxWidth: "1000px",
-          margin: "0 auto"
-        }}>
-          <div>
-            <h4>✔ Punctual & Reliable</h4>
-            <p>We prioritize on-time arrivals and dependable scheduling.</p>
-          </div>
+  <div style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+    gap: "30px",
+    maxWidth: "1000px",
+    margin: "0 auto"
+  }}>
+    <div>
+      <h4>✔ On-Time Every Time</h4>
+      <p>We prioritize punctual pickups and dependable scheduling.</p>
+    </div>
 
-          <div>
-            <h4>✔ Compassionate Drivers</h4>
-            <p>Our team treats every passenger with dignity and respect.</p>
-          </div>
+    <div>
+      <h4>✔ Compassionate Professionals</h4>
+      <p>Our drivers are respectful, patient, and attentive.</p>
+    </div>
 
-          <div>
-            <h4>✔ Licensed & Insured</h4>
-            <p>Fully compliant with transportation and safety regulations.</p>
-          </div>
+    <div>
+      <h4>✔ Safety First</h4>
+      <p>Fully licensed, insured, and compliant with safety standards.</p>
+    </div>
 
-          <div>
-            <h4>✔ Local Focus</h4>
-            <p>Serving communities north of Seattle with care and professionalism.</p>
-          </div>
-        </div>
-      </section>
+    <div>
+      <h4>✔ Local Expertise</h4>
+      <p>Serving communities north of Seattle with dedication and care.</p>
+    </div>
+  </div>
+</section>
 
       {/* TESTIMONIALS PREVIEW */}
       <section style={{

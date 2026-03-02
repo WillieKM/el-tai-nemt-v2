@@ -79,7 +79,7 @@ export default function RootLayout({
       Book Ride
     </Link>
   </div>
-</nav>>
+</nav>
 
         {children}
 

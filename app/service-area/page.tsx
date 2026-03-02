@@ -6,7 +6,7 @@ export const metadata = {
 
 export default function ServiceAreaPage() {
   return (
-    <main style={{ fontFamily: "Arial, sans-serif" }}>
+    <main ></main>style={{ fontFamily: "Arial, sans-serif" }}>
 
       {/* HERO */}
       <section

@@ -14,7 +14,7 @@ export default function HomePage() {
           background: "#0F2A43",
           color: "white",
           textAlign: "center",
-          padding: "160px 20px"
+          padding: "160px 20px" 
         }}
       >
         <h1 style={{ fontSize: "48px", marginBottom: "25px" }}>

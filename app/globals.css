@@ -95,5 +95,25 @@ body {
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     z-index: 1000;
   }
+.contact-page {
+  font-family: Arial, sans-serif;
+}
 
+.contact-hero {
+  background: #0F2A43;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.contact-info {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact-info a {
+  color: #C8A95A;
+  font-weight: 700;
+  text-decoration: none;
+}
   

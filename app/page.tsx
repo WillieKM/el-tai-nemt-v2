@@ -50,22 +50,23 @@ export default function Home() {
             alignItems: "center"
           }}
         >
-          <a href="/about" style={{ textDecoration: "none", color: "#0F2A43" }}>About</a>
-          <a href="/services" style={{ textDecoration: "none", color: "#0F2A43" }}>Services</a>
-          <a href="/areas" style={{ textDecoration: "none", color: "#0F2A43" }}>Service Areas</a>
-          <a
-            href="#contact"
-            style={{
-              background: "#C8A95A",
-              padding: "10px 22px",
-              borderRadius: "8px",
-              textDecoration: "none",
-              color: "#0F2A43",
-              fontWeight: 600
-            }}
-          >
-            Book Ride
-          </a>
+         <a href="/about" style={{ textDecoration: "none", color: "#0F2A43" }}>About</a>
+<a href="/services" style={{ textDecoration: "none", color: "#0F2A43" }}>Services</a>
+<a href="/service-area" style={{ textDecoration: "none", color: "#0F2A43" }}>Service Area</a>
+
+<a
+  href="/contact"
+  style={{
+    background: "#C8A95A",
+    padding: "10px 22px",
+    borderRadius: "8px",
+    textDecoration: "none",
+    color: "#0F2A43",
+    fontWeight: 600
+  }}
+>
+  Book Ride
+</a>
         </div>
       </nav>
 

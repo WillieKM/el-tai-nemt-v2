@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Request Medical Transportation | El-Tai Transportation",
+  description:
+    "Schedule Non-Emergency Medical Transportation north of Seattle. Call 469-407-5588 or request a ride online today.",
+};
 export default function ContactPage() {
   return (
     <main style={{ padding: "80px 20px", maxWidth: "900px", margin: "0 auto" }}>

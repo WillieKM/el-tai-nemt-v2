@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Service Areas | NEMT North of Seattle",
+  description:
+    "El-Tai Transportation serves communities north of Seattle with reliable Non-Emergency Medical Transportation for medical appointments, dialysis, rehabilitation, and hospital discharge.",
+};
+
 export default function ServiceArea() {
   return (
     <main style={{ fontFamily: "Arial, sans-serif", padding: "100px 20px", maxWidth: "1000px", margin: "0 auto" }}>

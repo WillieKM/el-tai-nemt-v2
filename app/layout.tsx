@@ -35,14 +35,25 @@ export default function RootLayout({
 
         {children}
 <footer className="footer">
-  <p>El-Tai Transportation</p>
-  <p>469-407-5588</p>
-  <p>info@el-taitransportation.com</p>
-  <p>Serving Everett, Marysville & Snohomish</p>
+  <div className="footer-container">
+    <div>
+      <h4>El-Tai Transportation</h4>
+      <p>Serving Everett, Marysville & Snohomish</p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>
+        <a href="tel:4694075588">469-407-5588</a>
+      </p>
+      <p>
+        <a href="mailto:info@el-taitransportation.com">
+          info@el-taitransportation.com
+        </a>
+      </p>
+    </div>
+  </div>
 </footer>
-        <a href="tel:4694075588" className="floating-call">
-  Call Now
-</a>
       </body>
     </html>
   );

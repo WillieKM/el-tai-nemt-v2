@@ -14,19 +14,21 @@ export default function HomePage() {
           background: "#0F2A43",
           color: "white",
           textAlign: "center",
-          padding: "160px 20px" 
+          padding: "160px 20px",
         }}
       >
         <h1 style={{ fontSize: "48px", marginBottom: "25px" }}>
           Reliable Non-Emergency Medical Transportation in Everett, Marysville & Snohomish
         </h1>
 
-        <p style={{
-          maxWidth: "720px",
-          margin: "0 auto 35px auto",
-          fontSize: "18px",
-          opacity: 0.95
-        }}>
+        <p
+          style={{
+            maxWidth: "720px",
+            margin: "0 auto 35px auto",
+            fontSize: "18px",
+            opacity: 0.95,
+          }}
+        >
           El-Tai Transportation provides safe, punctual, and compassionate
           medical transportation services throughout Everett, Marysville,
           Snohomish, and surrounding communities.
@@ -42,7 +44,7 @@ export default function HomePage() {
               textDecoration: "none",
               color: "#0F2A43",
               fontWeight: 600,
-              marginRight: "15px"
+              marginRight: "15px",
             }}
           >
             Request Transportation
@@ -56,7 +58,7 @@ export default function HomePage() {
               borderRadius: "8px",
               textDecoration: "none",
               color: "white",
-              fontWeight: 600
+              fontWeight: 600,
             }}
           >
             Call 469-407-5588
@@ -69,101 +71,119 @@ export default function HomePage() {
       </section>
 
       {/* WHY CHOOSE US */}
-      <section style={{
-        background: "#F7F9FC",
-        padding: "100px 20px",
-        textAlign: "center"
-      }}>
+      <section
+        style={{
+          background: "#F7F9FC",
+          padding: "100px 20px",
+          textAlign: "center",
+        }}
+      >
         <h2 style={{ fontSize: "36px", marginBottom: "30px", color: "#0F2A43" }}>
           Why Families Trust El-Tai Transportation
         </h2>
 
-        <p style={{
-          maxWidth: "750px",
-          margin: "0 auto 60px auto",
-          color: "#555",
-          fontSize: "18px"
-        }}>
+        <p
+          style={{
+            maxWidth: "750px",
+            margin: "0 auto 60px auto",
+            color: "#555",
+            fontSize: "18px",
+          }}
+        >
           We understand that medical transportation is more than just a ride —
-          it’s about safety, dignity, and reliability.
+          it’s about safety, dignity, and reliability. Our commitment is to
+          provide professional service that patients and families can depend on.
         </p>
 
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-          gap: "30px",
-          maxWidth: "1000px",
-          margin: "0 auto"
-        }}>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+            gap: "30px",
+            maxWidth: "1000px",
+            margin: "0 auto",
+          }}
+        >
           <div>
             <h4>✔ On-Time Every Time</h4>
-            <p>Dependable pickups and punctual arrivals.</p>
+            <p>We prioritize punctual pickups and dependable scheduling.</p>
           </div>
 
           <div>
             <h4>✔ Compassionate Professionals</h4>
-            <p>Respectful, patient, and trained drivers.</p>
+            <p>Our drivers are respectful, patient, and attentive.</p>
           </div>
 
           <div>
             <h4>✔ Safety First</h4>
-            <p>Fully licensed, insured, and compliant.</p>
+            <p>Fully licensed, insured, and compliant with safety standards.</p>
           </div>
 
           <div>
             <h4>✔ Local Expertise</h4>
-            <p>Serving north Seattle communities with care.</p>
+            <p>Serving Everett, Marysville, Snohomish & nearby communities.</p>
           </div>
         </div>
       </section>
 
       {/* TESTIMONIALS */}
-      <section style={{ padding: "100px 20px", textAlign: "center" }}>
+      <section
+        style={{
+          padding: "100px 20px",
+          textAlign: "center",
+        }}
+      >
         <h2 style={{ fontSize: "36px", marginBottom: "50px", color: "#0F2A43" }}>
           Trusted by Patients & Families
         </h2>
 
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-          gap: "30px",
-          maxWidth: "900px",
-          margin: "0 auto"
-        }}>
-          <div style={{ background: "white", padding: "30px", borderRadius: "10px" }}>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+            gap: "30px",
+            maxWidth: "900px",
+            margin: "0 auto",
+          }}
+        >
+          <div style={{ background: "white", padding: "30px", borderRadius: "10px", boxShadow: "0 10px 25px rgba(0,0,0,0.05)" }}>
             ⭐⭐⭐⭐⭐
-            <p>Professional, reliable, and always on time.</p>
+            <p>“Professional, reliable, and always on time for dialysis.”</p>
           </div>
 
-          <div style={{ background: "white", padding: "30px", borderRadius: "10px" }}>
+          <div style={{ background: "white", padding: "30px", borderRadius: "10px", boxShadow: "0 10px 25px rgba(0,0,0,0.05)" }}>
             ⭐⭐⭐⭐⭐
-            <p>Hospital discharge was smooth and stress-free.</p>
+            <p>“They made hospital discharge smooth and stress-free.”</p>
           </div>
 
-          <div style={{ background: "white", padding: "30px", borderRadius: "10px" }}>
+          <div style={{ background: "white", padding: "30px", borderRadius: "10px", boxShadow: "0 10px 25px rgba(0,0,0,0.05)" }}>
             ⭐⭐⭐⭐⭐
-            <p>Drivers are compassionate and respectful.</p>
+            <p>“Compassionate drivers who truly care.”</p>
           </div>
         </div>
       </section>
 
       {/* SERVICE AREA */}
-      <section style={{
-        background: "#F7F9FC",
-        padding: "100px 20px",
-        textAlign: "center"
-      }}>
+      <section
+        style={{
+          background: "#F7F9FC",
+          padding: "100px 20px",
+          textAlign: "center",
+        }}
+      >
         <h2 style={{ fontSize: "36px", marginBottom: "30px", color: "#0F2A43" }}>
           Proudly Serving North of Seattle
         </h2>
 
-        <p style={{
-          maxWidth: "750px",
-          margin: "0 auto 40px auto",
-          fontSize: "18px",
-          color: "#555"
-        }}>
-          Everett • Marysville • Snohomish • Surrounding Communities
+        <p
+          style={{
+            maxWidth: "750px",
+            margin: "0 auto 40px auto",
+            fontSize: "18px",
+            color: "#555",
+          }}
+        >
+          Serving Everett, Marysville, Snohomish, and surrounding communities.
         </p>
 
         <a
@@ -174,7 +194,7 @@ export default function HomePage() {
             borderRadius: "8px",
             textDecoration: "none",
             color: "white",
-            fontWeight: 600
+            fontWeight: 600,
           }}
         >
           View Service Areas
@@ -182,7 +202,12 @@ export default function HomePage() {
       </section>
 
       {/* FINAL CTA */}
-      <section style={{ padding: "100px 20px", textAlign: "center" }}>
+      <section
+        style={{
+          padding: "100px 20px",
+          textAlign: "center",
+        }}
+      >
         <h2 style={{ fontSize: "32px", marginBottom: "20px" }}>
           Need Medical Transportation Today?
         </h2>
@@ -199,7 +224,7 @@ export default function HomePage() {
             borderRadius: "8px",
             textDecoration: "none",
             color: "#0F2A43",
-            fontWeight: 600
+            fontWeight: 600,
           }}
         >
           Request Transportation

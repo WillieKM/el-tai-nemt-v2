@@ -1,18 +1,7 @@
 export const metadata = {
-  title: "El-Tai Transportation",
-  description: "Reliable Non-Emergency Medical Transportation",
+  title: "El-Tai Transportation | Non-Emergency Medical Transportation North of Seattle",
+  description:
+    "El-Tai Transportation provides safe, reliable Non-Emergency Medical Transportation (NEMT) services north of Seattle, including dialysis transport, hospital discharge, wheelchair accessible rides, and private medical transport.",
+  keywords:
+    "Non Emergency Medical Transportation Seattle, NEMT North Seattle, Dialysis Transportation Seattle, Wheelchair Transport Seattle, Medical Ride Service Washington",
 };
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <body style={{ margin: 0, fontFamily: "Arial, sans-serif" }}>
-        {children}
-      </body>
-    </html>
-  );
-}

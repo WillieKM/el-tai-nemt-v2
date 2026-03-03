@@ -1,11 +1,10 @@
 import "./globals.css";
 import Link from "next/link";
-import Script from "next/script";
 
 export const metadata = {
-  title: "El-Tai Transportation | Medical Transportation North of Seattle",
+  title: "El-Tai Transportation",
   description:
-    "Reliable Non-Emergency Medical Transportation serving Everett, Marysville, Snohomish and surrounding communities.",
+    "Non-Emergency Medical Transportation serving Everett, Marysville & Snohomish.",
 };
 
 export default function RootLayout({
@@ -19,48 +18,36 @@ export default function RootLayout({
 
         {/* NAVBAR */}
         <nav className="navbar">
-          <Link href="/" className="logo">
-            El-Tai Transportation
-          </Link>
+          <div className="nav-container">
+            <Link href="/" className="logo">
+              El-Tai Transportation
+            </Link>
 
-          <div className="nav-links">
-            <Link href="/">Home</Link>
-            <Link href="/service-area">Service Area</Link>
-            <Link href="/contact">Contact</Link>
-            <a href="tel:4694075588" className="cta">
-              Call 469-407-5588
-            </a>
+            <div className="nav-links">
+              <Link href="/">Home</Link>
+              <Link href="/about">About</Link>
+              <Link href="/services">Services</Link>
+              <Link href="/service-area">Service Area</Link>
+              <Link href="/contact">Contact</Link>
+              <Link href="/contact" className="btn">
+                Book Ride
+              </Link>
+            </div>
           </div>
         </nav>
 
+        {/* PAGE CONTENT */}
         {children}
 
-        {/* FLOATING MOBILE CALL BUTTON */}
-        <a href="tel:4694075588" className="floating-call">
-          📞 Call Now
-        </a>
-
-        {/* LOCAL BUSINESS SCHEMA */}
-        <Script
-          id="local-business-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "MedicalBusiness",
-              name: "El-Tai Transportation",
-              telephone: "469-407-5588",
-              areaServed: [
-                "Everett WA",
-                "Marysville WA",
-                "Snohomish WA",
-                "Snohomish County WA"
-              ],
-              serviceType: "Non-Emergency Medical Transportation",
-              url: "https://yourdomain.com"
-            }),
-          }}
-        />
+        {/* FOOTER */}
+        <footer className="footer">
+          <div className="footer-content">
+            <h3>El-Tai Transportation</h3>
+            <p>469-407-5588</p>
+            <p>info@el-taitransportation.com</p>
+            <p>Serving Everett, Marysville & Snohomish</p>
+          </div>
+        </footer>
 
       </body>
     </html>

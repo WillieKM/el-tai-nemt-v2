@@ -12,7 +12,6 @@ export default function ServiceAreaPage() {
     <>
       <main>
 
-        {/* HERO */}
         <section className="hero">
           <h1>
             Non-Emergency Medical Transportation in Everett, Marysville & Snohomish
@@ -22,7 +21,6 @@ export default function ServiceAreaPage() {
           </p>
         </section>
 
-        {/* SERVICE AREA CONTENT */}
         <section className="section">
           <h2>Serving Everett, Marysville & Snohomish</h2>
           <p>
@@ -32,7 +30,6 @@ export default function ServiceAreaPage() {
           </p>
         </section>
 
-        {/* GOOGLE MAP */}
         <section className="section light">
           <iframe
             src="https://www.google.com/maps?q=Everett,+WA&output=embed"
@@ -43,7 +40,6 @@ export default function ServiceAreaPage() {
           />
         </section>
 
-        {/* FAQ SECTION */}
         <section className="section">
           <h2>Frequently Asked Questions</h2>
 
@@ -78,7 +74,6 @@ export default function ServiceAreaPage() {
 
       </main>
 
-      {/* FAQ SCHEMA (MUST BE OUTSIDE MAIN BUT INSIDE COMPONENT RETURN) */}
       <Script
         id="faq-schema"
         type="application/ld+json"

@@ -56,7 +56,53 @@ export default function HomePage() {
           Call 469-407-5588
         </a>
       </section>
+import { useState } from "react";
 
+const faqs = [
+  {
+    question: "Do you provide transportation for dialysis appointments?",
+    answer:
+      "Yes. We regularly transport patients to and from dialysis treatments throughout Everett, Marysville, and Snohomish.",
+  },
+  {
+    question: "Do you assist with hospital discharge transportation?",
+    answer:
+      "Absolutely. We provide safe and reliable transportation home after hospital discharge.",
+  },
+  {
+    question: "Are your vehicles wheelchair accessible?",
+    answer:
+      "Yes. We offer wheelchair-accessible transportation for patients with mobility needs.",
+  },
+  {
+    question: "Do you accept Medicaid coordination?",
+    answer:
+      "We work with Medicaid transportation coordination services. Contact us directly for eligibility details.",
+  },
+  {
+    question: "What areas do you serve?",
+    answer:
+      "We proudly serve Everett, Marysville, Snohomish, and surrounding communities throughout Snohomish County.",
+  },
+];
+
+function FAQItem({ question, answer }: any) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="faq-item">
+      <button
+        className="faq-question"
+        onClick={() => setOpen(!open)}
+      >
+        {question}
+        <span>{open ? "−" : "+"}</span>
+      </button>
+
+      {open && <p className="faq-answer">{answer}</p>}
+    </div>
+  );
+}
       {/* TRUST BAR */}
       <section
         style={{

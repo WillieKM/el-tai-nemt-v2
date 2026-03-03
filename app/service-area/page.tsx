@@ -6,6 +6,54 @@ export const metadata = {
 
 export default function ServiceAreaPage() {
   return (
+{/* FAQ SCHEMA FOR GOOGLE */}
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you provide transportation within Everett?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. We provide Non-Emergency Medical Transportation services throughout Everett for dialysis, hospital discharge, and medical appointments.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Is Marysville included in your service area?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Absolutely. Marysville residents can rely on us for safe and punctual medical transportation.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Do you serve Snohomish?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. We proudly serve Snohomish and surrounding communities throughout Snohomish County.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "How do I schedule a ride?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "You can call 469-407-5588 or use our contact page to request transportation.",
+          },
+        },
+      ],
+    }),
+  }}
+/>    
     <main style={{ fontFamily: "Arial, sans-serif" }}>
       
       {/* HERO */}

@@ -1,70 +1,11 @@
-"use client";
-
-import { useState } from "react";
+export const metadata = {
+  title:
+    "El-Tai Transportation | Non-Emergency Medical Transportation in Everett, Marysville & Snohomish",
+  description:
+    "Safe and reliable medical transportation serving Everett, Marysville, and Snohomish.",
+};
 
 export default function HomePage() {
-  /* FAQ DATA */
-  const faqs = [
-    {
-      question: "Do you provide transportation for dialysis appointments?",
-      answer:
-        "Yes. We regularly transport patients to and from dialysis treatments throughout Everett, Marysville, and Snohomish.",
-    },
-    {
-      question: "Do you assist with hospital discharge transportation?",
-      answer:
-        "Absolutely. We provide safe and reliable transportation home after hospital discharge.",
-    },
-    {
-      question: "Are your vehicles wheelchair accessible?",
-      answer:
-        "Yes. We offer wheelchair-accessible transportation for patients with mobility needs.",
-    },
-    {
-      question: "Do you accept Medicaid coordination?",
-      answer:
-        "We work with Medicaid transportation coordination services. Contact us directly for eligibility details.",
-    },
-    {
-      question: "What areas do you serve?",
-      answer:
-        "We proudly serve Everett, Marysville, Snohomish, and surrounding communities throughout Snohomish County.",
-    },
-  ];
-
-  function FAQItem({ question, answer }: any) {
-    const [open, setOpen] = useState(false);
-
-    return (
-      <div style={{ marginBottom: "20px", borderBottom: "1px solid #ddd", paddingBottom: "15px" }}>
-        <button
-          onClick={() => setOpen(!open)}
-          style={{
-            width: "100%",
-            background: "none",
-            border: "none",
-            fontSize: "18px",
-            fontWeight: 600,
-            textAlign: "left",
-            display: "flex",
-            justifyContent: "space-between",
-            cursor: "pointer",
-            padding: "10px 0",
-          }}
-        >
-          {question}
-          <span>{open ? "−" : "+"}</span>
-        </button>
-
-        {open && (
-          <p style={{ marginTop: "10px", color: "#555", lineHeight: 1.6 }}>
-            {answer}
-          </p>
-        )}
-      </div>
-    );
-  }
-
   return (
     <main>
 
@@ -126,27 +67,6 @@ export default function HomePage() {
         }}
       >
         Licensed & Insured • Medicaid Coordination Available • Serving Snohomish County
-      </section>
-
-      {/* FAQ SECTION */}
-      <section
-        style={{
-          padding: "100px 20px",
-          maxWidth: "900px",
-          margin: "0 auto",
-        }}
-      >
-        <h2 style={{ textAlign: "center", marginBottom: "40px" }}>
-          Frequently Asked Questions
-        </h2>
-
-        {faqs.map((faq, index) => (
-          <FAQItem
-            key={index}
-            question={faq.question}
-            answer={faq.answer}
-          />
-        ))}
       </section>
 
     </main>

@@ -1,11 +1,70 @@
-"use client";export const metadata = {
-  title:
-    "El-Tai Transportation | Non-Emergency Medical Transportation in Everett, Marysville & Snohomish",
-  description:
-    "Safe and reliable medical transportation serving Everett, Marysville, and Snohomish.",
-};
+"use client";
+
+import { useState } from "react";
 
 export default function HomePage() {
+  /* FAQ DATA */
+  const faqs = [
+    {
+      question: "Do you provide transportation for dialysis appointments?",
+      answer:
+        "Yes. We regularly transport patients to and from dialysis treatments throughout Everett, Marysville, and Snohomish.",
+    },
+    {
+      question: "Do you assist with hospital discharge transportation?",
+      answer:
+        "Absolutely. We provide safe and reliable transportation home after hospital discharge.",
+    },
+    {
+      question: "Are your vehicles wheelchair accessible?",
+      answer:
+        "Yes. We offer wheelchair-accessible transportation for patients with mobility needs.",
+    },
+    {
+      question: "Do you accept Medicaid coordination?",
+      answer:
+        "We work with Medicaid transportation coordination services. Contact us directly for eligibility details.",
+    },
+    {
+      question: "What areas do you serve?",
+      answer:
+        "We proudly serve Everett, Marysville, Snohomish, and surrounding communities throughout Snohomish County.",
+    },
+  ];
+
+  function FAQItem({ question, answer }: any) {
+    const [open, setOpen] = useState(false);
+
+    return (
+      <div style={{ marginBottom: "20px", borderBottom: "1px solid #ddd", paddingBottom: "15px" }}>
+        <button
+          onClick={() => setOpen(!open)}
+          style={{
+            width: "100%",
+            background: "none",
+            border: "none",
+            fontSize: "18px",
+            fontWeight: 600,
+            textAlign: "left",
+            display: "flex",
+            justifyContent: "space-between",
+            cursor: "pointer",
+            padding: "10px 0",
+          }}
+        >
+          {question}
+          <span>{open ? "−" : "+"}</span>
+        </button>
+
+        {open && (
+          <p style={{ marginTop: "10px", color: "#555", lineHeight: 1.6 }}>
+            {answer}
+          </p>
+        )}
+      </div>
+    );
+  }
+
   return (
     <main>
 
@@ -56,53 +115,7 @@ export default function HomePage() {
           Call 469-407-5588
         </a>
       </section>
-import { useState } from "react";
 
-const faqs = [
-  {
-    question: "Do you provide transportation for dialysis appointments?",
-    answer:
-      "Yes. We regularly transport patients to and from dialysis treatments throughout Everett, Marysville, and Snohomish.",
-  },
-  {
-    question: "Do you assist with hospital discharge transportation?",
-    answer:
-      "Absolutely. We provide safe and reliable transportation home after hospital discharge.",
-  },
-  {
-    question: "Are your vehicles wheelchair accessible?",
-    answer:
-      "Yes. We offer wheelchair-accessible transportation for patients with mobility needs.",
-  },
-  {
-    question: "Do you accept Medicaid coordination?",
-    answer:
-      "We work with Medicaid transportation coordination services. Contact us directly for eligibility details.",
-  },
-  {
-    question: "What areas do you serve?",
-    answer:
-      "We proudly serve Everett, Marysville, Snohomish, and surrounding communities throughout Snohomish County.",
-  },
-];
-
-function FAQItem({ question, answer }: any) {
-  const [open, setOpen] = useState(false);
-
-  return (
-    <div className="faq-item">
-      <button
-        className="faq-question"
-        onClick={() => setOpen(!open)}
-      >
-        {question}
-        <span>{open ? "−" : "+"}</span>
-      </button>
-
-      {open && <p className="faq-answer">{answer}</p>}
-    </div>
-  );
-}
       {/* TRUST BAR */}
       <section
         style={{
@@ -115,91 +128,25 @@ function FAQItem({ question, answer }: any) {
         Licensed & Insured • Medicaid Coordination Available • Serving Snohomish County
       </section>
 
-      {/* WHY CHOOSE US */}
+      {/* FAQ SECTION */}
       <section
         style={{
           padding: "100px 20px",
-          textAlign: "center",
+          maxWidth: "900px",
+          margin: "0 auto",
         }}
       >
-        <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>
-          Why Families Trust El-Tai Transportation
+        <h2 style={{ textAlign: "center", marginBottom: "40px" }}>
+          Frequently Asked Questions
         </h2>
 
-        <p style={{ maxWidth: "750px", margin: "0 auto 60px auto" }}>
-          We understand medical transportation is more than just a ride —
-          it’s about safety, dignity, and reliability.
-        </p>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-            gap: "30px",
-            maxWidth: "1000px",
-            margin: "0 auto",
-          }}
-        >
-          <div>
-            <h4>✔ Always On Time</h4>
-            <p>Dependable scheduling and punctual pickups.</p>
-          </div>
-
-          <div>
-            <h4>✔ Respectful & Caring Drivers</h4>
-            <p>Professional, patient, and attentive service.</p>
-          </div>
-
-          <div>
-            <h4>✔ Safety You Can Trust</h4>
-            <p>Fully licensed and insured for peace of mind.</p>
-          </div>
-
-          <div>
-            <h4>✔ Proudly Local</h4>
-            <p>Serving Everett, Marysville & Snohomish.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* TESTIMONIALS */}
-      <section
-        style={{
-          background: "#F7F9FC",
-          padding: "100px 20px",
-          textAlign: "center",
-        }}
-      >
-        <h2 style={{ marginBottom: "50px" }}>
-          Trusted by Patients & Families
-        </h2>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-            gap: "30px",
-            maxWidth: "900px",
-            margin: "0 auto",
-          }}
-        >
-          <div style={{ background: "white", padding: "30px", borderRadius: "10px" }}>
-            ⭐⭐⭐⭐⭐
-            <p>
-              “They’ve been transporting my father to dialysis for months.
-              Always on time and always kind.”
-            </p>
-            <strong>— Everett Family</strong>
-          </div>
-
-          <div style={{ background: "white", padding: "30px", borderRadius: "10px" }}>
-            ⭐⭐⭐⭐⭐
-            <p>
-              “Very professional and caring during hospital discharge.”
-            </p>
-            <strong>— Marysville Resident</strong>
-          </div>
-        </div>
+        {faqs.map((faq, index) => (
+          <FAQItem
+            key={index}
+            question={faq.question}
+            answer={faq.answer}
+          />
+        ))}
       </section>
 
     </main>

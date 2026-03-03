@@ -1,4 +1,4 @@
-export const metadata = {
+"use client";export const metadata = {
   title:
     "El-Tai Transportation | Non-Emergency Medical Transportation in Everett, Marysville & Snohomish",
   description:

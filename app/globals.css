@@ -187,3 +187,9 @@ body {
   padding: 40px 20px;
   margin-top: 80px;
 }
+.brand {
+  font-weight: 700;
+  font-size: 20px;  /* increase slightly */
+  color: #0F2A43;
+  text-decoration: none;
+}

@@ -4,7 +4,7 @@ export const metadata = {
   title:
     "Medical Transportation in Everett, Marysville & Snohomish | El-Tai Transportation",
   description:
-    "Non-Emergency Medical Transportation serving Everett, Marysville, Snohomish and surrounding communities.",
+    "Non-Emergency Medical Transportation serving Everett, Marysville, Snohomish and surrounding communities throughout Snohomish County.",
 };
 
 export default function ServiceAreaPage() {
@@ -12,6 +12,7 @@ export default function ServiceAreaPage() {
     <>
       <main>
 
+        {/* HERO */}
         <section className="hero">
           <h1>
             Non-Emergency Medical Transportation in Everett, Marysville & Snohomish
@@ -21,15 +22,17 @@ export default function ServiceAreaPage() {
           </p>
         </section>
 
+        {/* SERVICE OVERVIEW */}
         <section className="section">
           <h2>Serving Everett, Marysville & Snohomish</h2>
           <p>
             El-Tai Transportation proudly serves families throughout Snohomish County,
-            providing dialysis transport, hospital discharge transportation,
+            providing dialysis transportation, hospital discharge transportation,
             rehabilitation visits, and routine medical appointment rides.
           </p>
         </section>
 
+        {/* MAP */}
         <section className="section light">
           <iframe
             src="https://www.google.com/maps?q=Everett,+WA&output=embed"
@@ -40,6 +43,7 @@ export default function ServiceAreaPage() {
           />
         </section>
 
+        {/* FAQ SECTION */}
         <section className="section">
           <h2>Frequently Asked Questions</h2>
 
@@ -74,6 +78,7 @@ export default function ServiceAreaPage() {
 
       </main>
 
+      {/* GOOGLE FAQ SCHEMA */}
       <Script
         id="faq-schema"
         type="application/ld+json"
@@ -97,7 +102,7 @@ export default function ServiceAreaPage() {
                 acceptedAnswer: {
                   "@type": "Answer",
                   text:
-                    "Yes. We proudly serve Marysville residents for medical transportation.",
+                    "Yes. Marysville residents can rely on our safe and punctual transportation.",
                 },
               },
               {
@@ -106,7 +111,16 @@ export default function ServiceAreaPage() {
                 acceptedAnswer: {
                   "@type": "Answer",
                   text:
-                    "Yes. We provide services throughout Snohomish and surrounding areas.",
+                    "Absolutely. We proudly serve Snohomish and surrounding communities.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How do I schedule a ride?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text:
+                    "Call 469-407-5588 or use our contact page to request transportation.",
                 },
               },
             ],

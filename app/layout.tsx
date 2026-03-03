@@ -17,24 +17,26 @@ export default function RootLayout({
       <body>
 
         {/* NAVBAR */}
-        <nav className="navbar">
-          <div className="nav-container">
-            <Link href="/" className="logo">
-              El-Tai Transportation
-            </Link>
+       <nav className="navbar">
+  <div className="nav-inner">
 
-            <div className="nav-links">
-              <Link href="/">Home</Link>
-              <Link href="/about">About</Link>
-              <Link href="/services">Services</Link>
-              <Link href="/service-area">Service Area</Link>
-              <Link href="/contact">Contact</Link>
-              <Link href="/contact" className="btn">
-                Book Ride
-              </Link>
-            </div>
-          </div>
-        </nav>
+    <Link href="/" className="brand">
+      El-Tai Transportation
+    </Link>
+
+    <div className="nav-menu">
+      <Link href="/">Home</Link>
+      <Link href="/about">About</Link>
+      <Link href="/services">Services</Link>
+      <Link href="/service-area">Service Area</Link>
+      <Link href="/contact">Contact</Link>
+      <Link href="/contact" className="book-btn">
+        Book Ride
+      </Link>
+    </div>
+
+  </div>
+</nav>
 
         {/* PAGE CONTENT */}
         {children}

@@ -24,16 +24,15 @@ export default function RootLayout({
       El-Tai Transportation
     </Link>
 
-    <div className="nav-menu">
-      <Link href="/">Home</Link>
-      <Link href="/about">About</Link>
-      <Link href="/services">Services</Link>
-      <Link href="/service-area">Service Area</Link>
-      <Link href="/contact">Contact</Link>
-      <Link href="/contact" className="book-btn">
-        Book Ride
-      </Link>
-    </div>
+  <div className="nav-menu">
+  <Link href="/about">About</Link>
+  <Link href="/services">Services</Link>
+  <Link href="/service-area">Service Area</Link>
+  <Link href="/contact">Contact</Link>
+  <Link href="/contact" className="book-btn">
+    Book Ride
+  </Link>
+</div>
 
   </div>
 </nav>

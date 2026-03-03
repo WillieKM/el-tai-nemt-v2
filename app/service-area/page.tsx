@@ -1,61 +1,16 @@
+import Script from "next/script";
+
 export const metadata = {
-  title: "Medical Transportation in Everett, Marysville & Snohomish | El-Tai Transportation",
+  title:
+    "Medical Transportation in Everett, Marysville & Snohomish | El-Tai Transportation",
   description:
-    "Non-Emergency Medical Transportation in Everett, Marysville, and Snohomish. Dialysis, hospital discharge, rehabilitation visits, and doctor appointments.",
+    "Non-Emergency Medical Transportation in Everett, Marysville, and Snohomish.",
 };
 
 export default function ServiceAreaPage() {
   return (
-{/* FAQ SCHEMA FOR GOOGLE */}
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Do you provide transportation within Everett?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text":
-              "Yes. We provide Non-Emergency Medical Transportation services throughout Everett for dialysis, hospital discharge, and medical appointments.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "Is Marysville included in your service area?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text":
-              "Absolutely. Marysville residents can rely on us for safe and punctual medical transportation.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "Do you serve Snohomish?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text":
-              "Yes. We proudly serve Snohomish and surrounding communities throughout Snohomish County.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "How do I schedule a ride?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text":
-              "You can call 469-407-5588 or use our contact page to request transportation.",
-          },
-        },
-      ],
-    }),
-  }}
-/>    
     <main style={{ fontFamily: "Arial, sans-serif" }}>
-      
+
       {/* HERO */}
       <section
         style={{
@@ -65,85 +20,113 @@ export default function ServiceAreaPage() {
           padding: "120px 20px",
         }}
       >
-        <h1 style={{ fontSize: "42px", marginBottom: "20px" }}>
+        <h1>
           Non-Emergency Medical Transportation in Everett, Marysville & Snohomish
         </h1>
-
-        <p style={{ maxWidth: "750px", margin: "0 auto", fontSize: "18px", opacity: 0.9 }}>
-          El-Tai Transportation proudly provides safe, reliable, and punctual
-          medical transportation services throughout Snohomish County.
+        <p>
+          Safe, reliable, and punctual transportation services throughout Snohomish County.
         </p>
       </section>
 
-      {/* EVERETT */}
-      <section style={{ padding: "80px 20px", maxWidth: "900px", margin: "0 auto" }}>
-        <h2 style={{ color: "#0F2A43", marginBottom: "15px" }}>
-          Medical Transportation in Everett
+      {/* GOOGLE MAP */}
+      <section style={{ padding: "80px 20px", textAlign: "center" }}>
+        <h2>Serving Everett, Marysville & Snohomish</h2>
+
+        <div style={{ maxWidth: "900px", margin: "30px auto" }}>
+          <iframe
+            src="https://www.google.com/maps?q=Everett,+WA&output=embed"
+            width="100%"
+            height="400"
+            style={{ border: 0, borderRadius: "12px" }}
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      {/* FAQ SECTION */}
+      <section
+        style={{
+          background: "#F7F9FC",
+          padding: "100px 20px",
+          maxWidth: "900px",
+          margin: "0 auto",
+        }}
+      >
+        <h2 style={{ textAlign: "center", marginBottom: "40px" }}>
+          Frequently Asked Questions
         </h2>
-        <p style={{ lineHeight: 1.8, color: "#555" }}>
-          We specialize in Non-Emergency Medical Transportation throughout Everett.
-          From dialysis treatments to hospital discharge and routine appointments,
-          we ensure punctual arrival and professional care.
-        </p>
-      </section>
 
-      {/* MARYSVILLE */}
-      <section style={{ background: "#F7F9FC", padding: "80px 20px" }}>
-        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <h2 style={{ color: "#0F2A43", marginBottom: "15px" }}>
-            Medical Transportation in Marysville
-          </h2>
-          <p style={{ lineHeight: 1.8, color: "#555" }}>
-            El-Tai Transportation proudly serves Marysville residents requiring
-            dependable medical transportation to hospitals, dialysis centers,
-            rehabilitation facilities, and specialist clinics.
+        <div style={{ marginBottom: "25px" }}>
+          <h4>Do you provide transportation within Everett?</h4>
+          <p>
+            Yes. We provide Non-Emergency Medical Transportation services
+            throughout Everett for dialysis and medical appointments.
+          </p>
+        </div>
+
+        <div style={{ marginBottom: "25px" }}>
+          <h4>Is Marysville included in your service area?</h4>
+          <p>
+            Absolutely. Marysville residents can rely on us for safe,
+            punctual medical transportation.
+          </p>
+        </div>
+
+        <div style={{ marginBottom: "25px" }}>
+          <h4>Do you serve Snohomish?</h4>
+          <p>
+            Yes. We proudly serve Snohomish and surrounding communities.
+          </p>
+        </div>
+
+        <div style={{ marginBottom: "25px" }}>
+          <h4>How do I schedule a ride?</h4>
+          <p>
+            Call 469-407-5588 or visit our contact page to request transportation.
           </p>
         </div>
       </section>
 
-      {/* SNOHOMISH */}
-      <section style={{ padding: "80px 20px", maxWidth: "900px", margin: "0 auto" }}>
-        <h2 style={{ color: "#0F2A43", marginBottom: "15px" }}>
-          Medical Transportation in Snohomish
-        </h2>
-        <p style={{ lineHeight: 1.8, color: "#555" }}>
-          Residents in Snohomish rely on El-Tai Transportation for safe,
-          compassionate Non-Emergency Medical Transportation services
-          for ongoing treatments and outpatient care.
-        </p>
-      </section>
-
-      {/* CTA */}
-      <section
-        style={{
-          background: "#0F2A43",
-          color: "white",
-          textAlign: "center",
-          padding: "100px 20px",
+      {/* FAQ SCHEMA (Correct Way) */}
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Do you provide transportation within Everett?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text:
+                    "Yes. We provide Non-Emergency Medical Transportation services throughout Everett.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Is Marysville included in your service area?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text:
+                    "Yes. We proudly serve Marysville residents for medical transportation.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Do you serve Snohomish?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text:
+                    "Yes. We provide services throughout Snohomish and surrounding areas.",
+                },
+              },
+            ],
+          }),
         }}
-      >
-        <h2 style={{ marginBottom: "20px" }}>
-          Need Medical Transportation in Everett, Marysville, or Snohomish?
-        </h2>
-
-        <p style={{ marginBottom: "30px" }}>
-          Call 469-407-5588 or request transportation online.
-        </p>
-
-        <a
-          href="/contact"
-          style={{
-            background: "#C8A95A",
-            padding: "14px 30px",
-            borderRadius: "8px",
-            textDecoration: "none",
-            color: "#0F2A43",
-            fontWeight: 600,
-          }}
-        >
-          Request Transportation
-        </a>
-      </section>
+      />
 
     </main>
   );

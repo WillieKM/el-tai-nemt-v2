@@ -2,7 +2,7 @@ export const metadata = {
   title:
     "El-Tai Transportation | Non-Emergency Medical Transportation in Everett, Marysville & Snohomish",
   description:
-    "Safe and reliable medical transportation serving Everett, Marysville, and Snohomish.",
+    "Safe, punctual, and compassionate medical transportation serving Everett, Marysville, and Snohomish.",
 };
 
 export default function HomePage() {
@@ -10,150 +10,157 @@ export default function HomePage() {
     <main>
 
       {/* HERO */}
-      <section
-        style={{
-          background: "#0F2A43",
-          color: "white",
-          textAlign: "center",
-          padding: "140px 20px",
-        }}
-      >
-        <h1 style={{ fontSize: "42px", marginBottom: "20px" }}>
-          Reliable Medical Transportation for Families in Everett, Marysville & Snohomish
-        </h1>
+      <section className="hero">
+        <div className="container">
 
-        <p style={{ maxWidth: "750px", margin: "0 auto 30px auto" }}>
-          Providing safe, punctual, and compassionate transportation for
-          dialysis, hospital discharge, rehabilitation visits, and doctor appointments.
-        </p>
+          <h1>
+            Reliable Medical Transportation in Everett,
+            Marysville & Snohomish
+          </h1>
 
-        <a
-          href="/contact"
-          style={{
-            background: "#C8A95A",
-            padding: "14px 30px",
-            borderRadius: "8px",
-            textDecoration: "none",
-            color: "#0F2A43",
-            fontWeight: 700,
-            marginRight: "15px",
-          }}
-        >
-          Request Transportation
-        </a>
+          <p>
+            Safe, punctual, and compassionate transportation for dialysis,
+            hospital discharge, rehabilitation visits, and doctor appointments.
+          </p>
 
-        <a
-          href="tel:4694075588"
-          style={{
-            border: "2px solid #C8A95A",
-            padding: "12px 26px",
-            borderRadius: "8px",
-            textDecoration: "none",
-            color: "white",
-            fontWeight: 700,
-          }}
-        >
-          Call 469-407-5588
-        </a>
-      </section>
+          <div className="hero-buttons">
+            <a href="/contact" className="primary-btn">
+              Request Transportation
+            </a>
 
-      {/* TRUST BAR */}
-      <section
-        style={{
-          background: "#F7F9FC",
-          textAlign: "center",
-          padding: "30px 20px",
-          fontWeight: 600,
-        }}
-      >
-        Licensed & Insured • Medicaid Coordination Available • Serving Snohomish County
+            <a href="tel:4694075588" className="secondary-btn">
+              Call 469-407-5588
+            </a>
+          </div>
+
+          <div className="trust-bar">
+            Licensed • Insured • Medicaid Coordination Available
+          </div>
+
+        </div>
       </section>
 
       {/* WHY CHOOSE US */}
-      <section
-        style={{
-          padding: "100px 20px",
-          textAlign: "center",
-        }}
-      >
-        <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>
-          Why Families Trust El-Tai Transportation
-        </h2>
+      <section className="section">
+        <div className="container">
 
-        <p style={{ maxWidth: "750px", margin: "0 auto 60px auto" }}>
-          We understand medical transportation is more than just a ride —
-          it’s about safety, dignity, and reliability.
-        </p>
+          <h2>Why Families Trust El-Tai Transportation</h2>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-            gap: "30px",
-            maxWidth: "1000px",
-            margin: "0 auto",
-          }}
-        >
-          <div>
-            <h4>✔ Always On Time</h4>
-            <p>Dependable scheduling and punctual pickups.</p>
+          <p className="section-intro">
+            Medical transportation is more than a ride — it's about safety,
+            dignity, and reliability for patients and families.
+          </p>
+
+          <div className="grid">
+
+            <div className="card">
+              <h3>✔ Always On Time</h3>
+              <p>Reliable scheduling and punctual pickups.</p>
+            </div>
+
+            <div className="card">
+              <h3>✔ Compassionate Drivers</h3>
+              <p>Professional and respectful assistance for patients.</p>
+            </div>
+
+            <div className="card">
+              <h3>✔ Safe & Insured</h3>
+              <p>Licensed, insured, and fully compliant transportation.</p>
+            </div>
+
+            <div className="card">
+              <h3>✔ Local Service</h3>
+              <p>Serving Everett, Marysville, Snohomish and nearby areas.</p>
+            </div>
+
           </div>
 
-          <div>
-            <h4>✔ Respectful & Caring Drivers</h4>
-            <p>Professional, patient, and attentive service.</p>
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section className="section light">
+        <div className="container">
+
+          <h2>Our Medical Transportation Services</h2>
+
+          <div className="grid">
+
+            <div className="card">
+              <h3>Dialysis Transportation</h3>
+              <p>
+                Reliable recurring transportation to dialysis appointments.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>Hospital Discharge</h3>
+              <p>
+                Safe transportation home after hospital discharge.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>Doctor Appointments</h3>
+              <p>
+                Transportation for routine medical visits and checkups.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>Wheelchair Transport</h3>
+              <p>
+                Wheelchair-accessible vehicles available for mobility needs.
+              </p>
+            </div>
+
           </div>
 
-          <div>
-            <h4>✔ Safety You Can Trust</h4>
-            <p>Fully licensed and insured for peace of mind.</p>
-          </div>
-
-          <div>
-            <h4>✔ Proudly Local</h4>
-            <p>Serving Everett, Marysville & Snohomish.</p>
-          </div>
         </div>
       </section>
 
       {/* TESTIMONIALS */}
-      <section
-        style={{
-          background: "#F7F9FC",
-          padding: "100px 20px",
-          textAlign: "center",
-        }}
-      >
-        <h2 style={{ marginBottom: "50px" }}>
-          Trusted by Patients & Families
-        </h2>
+      <section className="section">
+        <div className="container">
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-            gap: "30px",
-            maxWidth: "900px",
-            margin: "0 auto",
-          }}
-        >
-          <div style={{ background: "white", padding: "30px", borderRadius: "10px" }}>
-            ⭐⭐⭐⭐⭐
-            <p>
-              “They’ve been transporting my father to dialysis for months.
-              Always on time and always kind.”
-            </p>
-            <strong>— Everett Family</strong>
+          <h2>Trusted by Patients & Families</h2>
+
+          <div className="grid">
+
+            <div className="card testimonial">
+              ⭐⭐⭐⭐⭐
+              <p>
+                “They transport my father to dialysis every week. Always on
+                time and very kind drivers.”
+              </p>
+              <strong>— Everett Family</strong>
+            </div>
+
+            <div className="card testimonial">
+              ⭐⭐⭐⭐⭐
+              <p>
+                “Professional service and very helpful after hospital
+                discharge.”
+              </p>
+              <strong>— Marysville Resident</strong>
+            </div>
+
           </div>
 
-          <div style={{ background: "white", padding: "30px", borderRadius: "10px" }}>
-            ⭐⭐⭐⭐⭐
-            <p>
-              “Very professional and caring during hospital discharge.”
-            </p>
-            <strong>— Marysville Resident</strong>
-          </div>
         </div>
+      </section>
+
+      {/* CTA */}
+      <section className="cta">
+
+        <h2>Need Medical Transportation Today?</h2>
+
+        <p>Call 469-407-5588 or request transportation online.</p>
+
+        <a href="/contact" className="primary-btn">
+          Book Transportation
+        </a>
+
       </section>
 
     </main>
